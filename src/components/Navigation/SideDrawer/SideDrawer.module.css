@@ -12,6 +12,7 @@
   transition: transform 0.3s ease-out;
 }
 
+ /* For big devices we won't see the sidedrawer */
 @media (min-width: 500px) {
   .SideDrawer {
     display: none;

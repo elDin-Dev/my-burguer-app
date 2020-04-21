@@ -10,9 +10,12 @@ export const checkoutSummary = (props) => {
                 <Burger ingredients={props.ingredients} />
             </div>
 
-            <Button buttonType="Danger" clicked>CANCEL</Button>
-            <Button buttonType="Success" clicked>CONTINUE</Button>
-
+            <Button
+             buttonType="Danger"
+             clicked={props.onCheckoutCancelled}>CANCEL</Button>
+            <Button
+             buttonType="Success" 
+             clicked={props.onCheckoutContinued}>CONTINUE</Button>
         </div>
     );
 }

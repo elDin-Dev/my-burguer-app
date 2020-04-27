@@ -57,6 +57,7 @@ export class ContactData extends Component {
                         { value: 'fastest', displayValue: 'Fastest' },
                         { value: 'cheapest', displayValue: 'Cheapest' }
                     ],
+
                 },
                 value: '',
             },
@@ -115,7 +116,6 @@ export class ContactData extends Component {
                             elementType={formElement.config.elementType}
                             elementConfig={formElement.config.elementConfig}
                             value={formElement.config.value}
-
                         />
                     ))
                 }

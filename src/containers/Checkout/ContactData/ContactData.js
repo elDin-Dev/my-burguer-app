@@ -44,8 +44,8 @@ export class ContactData extends Component {
                 value: '',
                 validation: {
                     required: true,
-                    minLength:5,
-                    maxLength:5,
+                    minLength: 5,
+                    maxLength: 5,
                 },
                 valid: false,
 
@@ -176,7 +176,11 @@ export class ContactData extends Component {
                             elementType={formElement.config.elementType}
                             elementConfig={formElement.config.elementConfig}
                             value={formElement.config.value}
-                            changed={(event) => this.inputChangedHandler(event, formElement.id)}
+                            invalid={!formElement.config.valid}
+                            shouldValidate={formElement.config.validation}
+                            changed={(event) => this.inputChangedHandler(event, formElement.id)
+
+                            }
                         />
                     ))
                 }

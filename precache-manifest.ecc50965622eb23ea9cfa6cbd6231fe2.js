@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "890cc4bbcb609ae99458782d629e85d9",
+    "revision": "dd1789181ce6ac5cff57f4654d983555",
     "url": "/my-burguer-app/index.html"
   },
   {
-    "revision": "5006d8ee71f518ee3704",
-    "url": "/my-burguer-app/static/css/main.5bdfe068.chunk.css"
+    "revision": "d1bdb19a1dcefdf8ba32",
+    "url": "/my-burguer-app/static/css/main.047a4aa2.chunk.css"
   },
   {
-    "revision": "acecddcb14532bfedbaa",
-    "url": "/my-burguer-app/static/js/2.351714f2.chunk.js"
+    "revision": "82c138ed4512c6798683",
+    "url": "/my-burguer-app/static/js/2.e4045ae2.chunk.js"
   },
   {
     "revision": "928d7b5eb39d16fe9a880722c974b51e",
-    "url": "/my-burguer-app/static/js/2.351714f2.chunk.js.LICENSE.txt"
+    "url": "/my-burguer-app/static/js/2.e4045ae2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5006d8ee71f518ee3704",
-    "url": "/my-burguer-app/static/js/main.df6d290e.chunk.js"
+    "revision": "d1bdb19a1dcefdf8ba32",
+    "url": "/my-burguer-app/static/js/main.db7efcda.chunk.js"
   },
   {
     "revision": "dd1f6930cb8eb3bdad24",

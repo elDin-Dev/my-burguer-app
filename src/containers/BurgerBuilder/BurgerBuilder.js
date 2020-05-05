@@ -20,7 +20,7 @@ class BurgerBuilder extends Component {
 
   componentDidMount() {
 
-    /*
+    /*npm au
     console.log('[BurgerBuilder cdm]');
     console.log( this.props);
     axios.get('https://my-burger-app-e3d1d.firebaseio.com/ingredients.json')

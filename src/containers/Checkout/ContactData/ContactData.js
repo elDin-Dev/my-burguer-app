@@ -115,20 +115,6 @@ export class ContactData extends Component {
             orderData: formData,
         }
 
-        axios.post('/orders.json/', order)
-            .then(response => {
-                console.log(response)
-                this.setState({ loading: false });
-                this.props.history.push('/');
-
-            })
-            .catch(error => {
-                console.log(error)
-                this.setState({ loading: false });
-            });
-
-
-
     }
 
     checkValidity(value, rules) {

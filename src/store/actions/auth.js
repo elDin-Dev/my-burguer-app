@@ -22,13 +22,28 @@ export const authFail = (error) => {
     };
 };
 
+export const logout = () => {
+    return {
+        type:actionTypes.AUTH_LOGOUT,
+
+    };
+}
+
+export const checkAuthTimeout = (expirationTime) => {
+    return dispatch => {
+        setTimeout(() => {
+            dispatch(logout());
+        },expirationTime * 1000)
+    };
+}
+
 export const auth = (email, password, isSignup) => {
     return dispatch => {
         dispatch(authStart());
         const authData = {
             email: email,
             password: password,
-            resturnSecureToken: true,
+            returnSecureToken: true,
 
         }
         const key='AIzaSyCgTNhKT4929oCXB0-pze0cuEU_m06aoDU'
@@ -40,6 +55,8 @@ export const auth = (email, password, isSignup) => {
         .then(response => {
             console.log(response);
             dispatch(authSuccess(response.data.idToken,response.data.localId));
+            dispatch(checkAuthTimeout(response.data.expiresIn));
+
         })
         .catch(err => {
             if (err.response) {

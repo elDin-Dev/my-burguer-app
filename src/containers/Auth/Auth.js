@@ -75,7 +75,7 @@ export class Auth extends Component {
 
   switchAuthModeHandler = () => {
     this.setState((prevState) => {
-      console.log("switchAuthModeHandler", prevState.isSignup);
+   
       return { isSignup: !prevState.isSignup };
     });
   };

@@ -23,7 +23,7 @@ export class Checkout extends Component {
     onCheckoutCancelled
     render() {
 
-        console.log('[Checkou - >render]', this.props.purchased);
+   
 
         let summary = <Redirect to="/" />
         if (this.props.ings) {
